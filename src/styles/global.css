@@ -91,6 +91,8 @@
         transparent 28%
       ),
       linear-gradient(135deg, #3a3d3c 0%, #252a2b 48%, #1f2425 100%);
+    background-position: center;
+    background-size: cover;
   }
 
   .bamboo-panel {
