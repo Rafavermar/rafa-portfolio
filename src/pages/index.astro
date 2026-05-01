@@ -15,34 +15,48 @@ const visibleLinks = socialLinks;
 ---
 
 <BaseLayout>
-  <section
-    class="hero-slate relative overflow-hidden border-b border-line"
-    style={`background-image: linear-gradient(90deg, rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.62) 58%, rgba(17, 24, 39, 0.25)), url(${withBase("/images/backgrounds/slate-bamboo.png")});`}
-  >
-    <div class="absolute bottom-12 right-[12vw] hidden h-28 w-28 border border-white/20 bg-white/5 lg:block"></div>
-    <div class="container-page relative grid min-h-[min(640px,calc(100vh-5rem))] content-center gap-10 py-20">
+  <section class="hero-panel border-b border-line">
+    <div class="container-page grid min-h-[min(620px,calc(100vh-5rem))] content-center gap-10 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
       <div class="max-w-4xl">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-paper-200">{profile.role}</p>
-        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+        <div class="hero-rule"></div>
+        <p class="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-steel">{profile.role}</p>
+        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl lg:text-6xl">
           Data platforms built to be operated, trusted and evolved.
         </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-paper-200">{profile.intro}</p>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-ink-650">{profile.intro}</p>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a class="rounded-sm bg-white px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:bg-paper-200" href={withBase("/projects/")}>
+          <a class="primary-link" href={withBase("/projects/")}>
             View projects
           </a>
-          <a class="rounded-sm border border-white/30 bg-white/10 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/15" href={withBase("/contact/")}>
+          <a class="secondary-link" href={withBase("/contact/")}>
             Contact
           </a>
-          <a class="rounded-sm border border-white/30 bg-white/10 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/15" href={withBase(profile.cvUrl)}>
+          <a class="secondary-link" href={withBase(profile.cvUrl)}>
             CV
           </a>
         </div>
       </div>
-      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-paper-200">
-        <a class="hover:text-white" href={withBase("/writing/")}>Writing</a>
-        <a class="hover:text-white" href={withBase("/certifications/")}>Certifications</a>
-        {visibleLinks.map((link) => <a class="hover:text-white" href={link.url}>{link.label}</a>)}
+      <div class="quiet-card p-6">
+        <p class="text-sm font-semibold text-steel">Core focus</p>
+        <div class="mt-5 grid gap-4">
+          <div class="border-l-2 border-steel pl-4">
+            <h2 class="font-semibold text-ink-950">Cloud data platforms</h2>
+            <p class="mt-1 text-sm leading-6 text-ink-650">Azure, Databricks, Fabric and Spark delivery.</p>
+          </div>
+          <div class="border-l-2 border-sage pl-4">
+            <h2 class="font-semibold text-ink-950">Architecture that survives operation</h2>
+            <p class="mt-1 text-sm leading-6 text-ink-650">Clear layers, security boundaries and maintainable ownership.</p>
+          </div>
+          <div class="border-l-2 border-sand pl-4">
+            <h2 class="font-semibold text-ink-950">Practical AI and agents</h2>
+            <p class="mt-1 text-sm leading-6 text-ink-650">RAG, MCP and agent workflows connected to reliable data foundations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink-650 lg:col-span-2">
+        <a class="hover:text-ink-950" href={withBase("/writing/")}>Writing</a>
+        <a class="hover:text-ink-950" href={withBase("/certifications/")}>Certifications</a>
+        {visibleLinks.map((link) => <a class="hover:text-ink-950" href={link.url}>{link.label}</a>)}
       </div>
     </div>
   </section>
