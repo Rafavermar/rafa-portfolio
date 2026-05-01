@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentCard from "../components/ContentCard.astro";
 import profile from "../data/profile.json";
-import socialLinks from "../data/social-links.json";
 import { withBase } from "../lib/paths";
 import { getCollection } from "astro:content";
 
@@ -10,8 +9,6 @@ const projects = (await getCollection("projects"))
   .filter((project) => !project.data.draft)
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured))
   .slice(0, 4);
-
-const visibleLinks = socialLinks;
 ---
 
 <BaseLayout>
@@ -19,8 +16,7 @@ const visibleLinks = socialLinks;
     <div class="container-page grid min-h-[min(620px,calc(100vh-5rem))] content-center gap-10 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
       <div class="max-w-4xl">
         <div class="hero-rule"></div>
-        <p class="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-steel">{profile.role}</p>
-        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl lg:text-6xl">
+        <h1 class="mt-8 max-w-3xl text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl lg:text-6xl">
           Data platforms built to be operated, trusted and evolved.
         </h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-ink-650">{profile.intro}</p>
@@ -52,11 +48,6 @@ const visibleLinks = socialLinks;
             <p class="mt-1 text-sm leading-6 text-ink-650">RAG, MCP and agent workflows connected to reliable data foundations.</p>
           </div>
         </div>
-      </div>
-      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink-650 lg:col-span-2">
-        <a class="hover:text-ink-950" href={withBase("/writing/")}>Writing</a>
-        <a class="hover:text-ink-950" href={withBase("/certifications/")}>Certifications</a>
-        {visibleLinks.map((link) => <a class="hover:text-ink-950" href={link.url}>{link.label}</a>)}
       </div>
     </div>
   </section>

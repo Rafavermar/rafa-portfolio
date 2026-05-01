@@ -13,10 +13,7 @@ const certifications = (await getCollection("certifications"))
 <BaseLayout title={`Certifications - ${profile.name}`} description="Professional certifications and credentials.">
   <section class="section-gap">
     <div class="container-page">
-      <SectionHeading
-        eyebrow="Certifications"
-        title="Current data platform credentials."
-      />
+      <SectionHeading title="Certifications" />
       <div class="mt-10 grid gap-5 md:grid-cols-2">
         {
           certifications.map((certification) => (
