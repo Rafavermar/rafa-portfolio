@@ -1,0 +1,42 @@
+---
+import { withBase } from "../lib/paths";
+import profile from "../data/profile.json";
+
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/about/", label: "About" },
+  { href: "/expertise/", label: "Expertise" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/writing/", label: "Writing" },
+  { href: "/certifications/", label: "Certifications" },
+  { href: "/contact/", label: "Contact" },
+];
+---
+
+<header class="border-b border-line bg-paper-50/88 backdrop-blur">
+  <a
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
+    href="#content"
+  >
+    Skip to content
+  </a>
+  <div class="container-page flex min-h-20 flex-col justify-center gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
+    <a class="group w-fit text-sm font-semibold text-ink-950 no-underline" href={withBase("/")}>
+      <span class="block text-base">{profile.shortName}</span>
+      <span class="block font-normal text-ink-650">{profile.role}</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-650">
+        {
+          navItems.map((item) => (
+            <li>
+              <a class="transition hover:text-ink-950" href={withBase(item.href)}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

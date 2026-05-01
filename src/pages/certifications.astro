@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentCard from "../components/ContentCard.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import profile from "../data/profile.json";
+import { getCollection } from "astro:content";
+
+const certifications = (await getCollection("certifications"))
+  .filter((certification) => !certification.data.draft)
+  .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+---
+
+<BaseLayout title={`Certifications - ${profile.name}`} description="Professional certifications and credentials.">
+  <section class="section-gap">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Certifications"
+        title="Current data platform credentials."
+        description="Credential URLs can be added when the public verification links are extracted or provided."
+      />
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {
+          certifications.map((certification) => (
+            <ContentCard
+              title={certification.data.name}
+              description={`${certification.data.issuer}${certification.data.status ? ` - ${certification.data.status}` : ""}`}
+              href={certification.data.credentialUrl || undefined}
+              meta={certification.data.date}
+              tags={certification.data.tags}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
