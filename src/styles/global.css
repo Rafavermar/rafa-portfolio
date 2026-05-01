@@ -52,7 +52,8 @@
   }
 
   body {
-    @apply bg-paper-50 font-sans text-ink-800 antialiased;
+    @apply font-sans antialiased;
+    color: rgb(var(--color-ink-800));
     background: linear-gradient(
       180deg,
       var(--surface-gradient-start) 0%,
@@ -62,7 +63,8 @@
   }
 
   ::selection {
-    @apply bg-paper-200 text-ink-950;
+    color: rgb(var(--color-ink-950));
+    background-color: rgb(var(--color-paper-200));
   }
 
   a {
@@ -70,7 +72,8 @@
   }
 
   :focus-visible {
-    @apply outline outline-2 outline-offset-4 outline-steel;
+    @apply outline outline-2 outline-offset-4;
+    outline-color: rgb(var(--color-steel));
   }
 }
 
@@ -80,7 +83,8 @@
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.16em] text-steel;
+    @apply text-xs font-semibold uppercase tracking-[0.16em];
+    color: rgb(var(--color-steel));
   }
 
   .section-gap {
@@ -88,29 +92,46 @@
   }
 
   .quiet-card {
-    @apply relative overflow-hidden rounded-md border border-line bg-cloud shadow-soft;
+    @apply relative overflow-hidden rounded-md border shadow-soft;
+    border-color: rgb(var(--color-line));
+    background-color: rgb(var(--color-cloud));
   }
 
   .quiet-card::before {
     content: "";
-    @apply absolute inset-x-0 top-0 h-[3px] bg-steel;
+    @apply absolute inset-x-0 top-0 h-[3px];
+    background-color: rgb(var(--color-steel));
   }
 
   .tag {
-    @apply inline-flex rounded-sm border border-line bg-paper-50 px-2.5 py-1 text-xs font-medium text-ink-650;
+    @apply inline-flex rounded-sm border px-2.5 py-1 text-xs font-medium;
+    color: rgb(var(--color-ink-650));
+    border-color: rgb(var(--color-line));
+    background-color: rgb(var(--color-paper-50));
   }
 
   .filter-chip {
-    @apply rounded-sm border border-line bg-cloud px-3 py-2 text-sm font-semibold text-ink-650 transition hover:border-steel hover:text-ink-950;
+    @apply rounded-sm border px-3 py-2 text-sm font-semibold transition;
+    color: rgb(var(--color-ink-650));
+    border-color: rgb(var(--color-line));
+    background-color: rgb(var(--color-cloud));
+  }
+
+  .filter-chip:hover {
+    color: rgb(var(--color-ink-950));
+    border-color: rgb(var(--color-steel));
   }
 
   .filter-chip.is-active {
-    @apply border-steel bg-ink-950 text-white;
+    color: white;
+    border-color: rgb(var(--color-steel));
+    background-color: rgb(var(--color-ink-950));
   }
 
   .soft-band {
-    @apply border-y border-line;
-    @apply bg-paper-100;
+    @apply border-y;
+    border-color: rgb(var(--color-line));
+    background-color: rgb(var(--color-paper-100));
   }
 
   .hero-panel {
@@ -122,15 +143,29 @@
   }
 
   .hero-rule {
-    @apply h-1 w-20 bg-steel;
+    @apply h-1 w-20;
+    background-color: rgb(var(--color-steel));
   }
 
   .primary-link {
-    @apply rounded-sm bg-ink-950 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-steel;
+    @apply rounded-sm px-4 py-3 text-sm font-semibold text-white no-underline transition;
+    background-color: rgb(var(--color-ink-950));
+  }
+
+  .primary-link:hover {
+    background-color: rgb(var(--color-steel));
   }
 
   .secondary-link {
-    @apply rounded-sm border border-line bg-cloud px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel hover:text-steel;
+    @apply rounded-sm border px-4 py-3 text-sm font-semibold no-underline transition;
+    color: rgb(var(--color-ink-950));
+    border-color: rgb(var(--color-line));
+    background-color: rgb(var(--color-cloud));
+  }
+
+  .secondary-link:hover {
+    color: rgb(var(--color-steel));
+    border-color: rgb(var(--color-steel));
   }
 
   .line-clamp-3 {
@@ -141,7 +176,7 @@
   }
 
   .content-body {
-    @apply text-ink-650;
+    color: rgb(var(--color-ink-650));
   }
 
   .content-body p {
@@ -149,7 +184,12 @@
   }
 
   .content-body a {
-    @apply font-semibold text-ink-950 hover:text-steel;
+    @apply font-semibold;
+    color: rgb(var(--color-ink-950));
+  }
+
+  .content-body a:hover {
+    color: rgb(var(--color-steel));
   }
 
   .content-body ul {
