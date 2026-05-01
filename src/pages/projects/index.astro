@@ -16,11 +16,7 @@ const tags = projects.flatMap((project) => project.data.tags);
 <BaseLayout title={`Projects - ${profile.name}`} description="Selected data engineering and architecture projects.">
   <section class="section-gap">
     <div class="container-page">
-      <SectionHeading
-        eyebrow="Projects"
-        title="Projects"
-        description="Hands-on builds, PoCs, pipelines and deployments."
-      />
+      <SectionHeading eyebrow="Projects" title="Projects" />
       <TagFilter tags={tags} label="Filter projects by tag" />
       <div class="mt-10 grid gap-5 md:grid-cols-2">
         {

@@ -18,7 +18,7 @@ links:
   - label: "GitHub repository"
     url: "https://github.com/EOITFMDE25/TFM/tree/main"
 tags:
-  - Data Engineering
+  - Data engineering
   - Architecture
   - FastAPI
   - Kafka
