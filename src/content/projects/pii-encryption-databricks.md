@@ -19,6 +19,7 @@ tags:
   - Security
   - Databricks
   - PII
+  - Spark
 featured: true
 ---
 

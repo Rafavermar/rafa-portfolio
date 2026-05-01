@@ -1,24 +1,25 @@
 {
-  "name": "Rafael Vera Marañón",
+  "name": "Rafael Vera Mara\u00f1\u00f3n",
   "shortName": "Rafael Vera",
   "role": "Senior Data Engineer & Data Architect",
-  "location": "Málaga, Spain · Remote",
+  "location": "M\u00e1laga, Spain \u00b7 Remote",
   "intro": "I design and build cloud data platforms across Azure, Databricks, Microsoft Fabric and Apache Spark, with a strong focus on practical architecture, delivery and maintainability.",
   "summary": [
     "Data engineer and architect working on cloud data platforms, metadata-driven systems, secure analytics foundations and semantic layers.",
     "My recent work combines PySpark, Databricks, Delta Lake, Unity Catalog, Azure Data Factory, Synapse, Microsoft Fabric, MongoDB and Power BI, with attention to delivery practices such as CI/CD and infrastructure as code."
   ],
   "about": [
-    "I am a data engineer and data architect based in Málaga, working remotely on cloud data platforms and analytics systems. My recent roles have focused on Azure, Databricks, Microsoft Fabric, PySpark, Synapse, Data Factory, Delta Lake, Unity Catalog, MongoDB and Power BI semantic models.",
+    "I am a data engineer and data architect based in M\u00e1laga, working remotely on cloud data platforms and analytics systems. My recent roles have focused on Azure, Databricks, Microsoft Fabric, PySpark, Synapse, Data Factory, Delta Lake, Unity Catalog, MongoDB and Power BI semantic models.",
     "I have worked across platform engineering, ETL and ELT delivery, metadata-driven architecture, data virtualization, secure connectivity patterns, streaming and analytics enablement. My background also includes software engineering, API development, identity and access management, process analytics and technical delivery in international environments.",
     "I prefer architecture that can be explained, operated and evolved. That means clear data layers, explicit ownership, automated delivery where it reduces risk, and technical decisions that remain understandable after the first release."
   ],
   "availability": "Open to senior data engineering, data architecture and platform delivery conversations.",
   "email": "jr.vera.ma@gmail.com",
-  "cvUrl": "",
+  "cvUrl": "/documents/EN_RafaelVera.pdf",
   "expertise": [
     {
-      "title": "Cloud Data Platforms",
+      "title": "Platform architecture",
+      "summary": "Designing data platforms that are clear to operate and evolve.",
       "items": [
         "Azure",
         "Databricks",
@@ -29,7 +30,8 @@
       ]
     },
     {
-      "title": "Engineering Foundations",
+      "title": "Data engineering delivery",
+      "summary": "Building pipelines, lakehouse layers and automation patterns for real workloads.",
       "items": [
         "Apache Spark",
         "PySpark",
@@ -41,7 +43,8 @@
       ]
     },
     {
-      "title": "Analytics And Governance",
+      "title": "Analytics and governance",
+      "summary": "Connecting trusted data foundations with semantic models, security and quality controls.",
       "items": [
         "Semantic models / Power BI",
         "Private networking / secure cloud architecture",
@@ -49,6 +52,18 @@
         "Unity Catalog",
         "Delta Lake",
         "Operational delivery"
+      ]
+    },
+    {
+      "title": "AI and agent workflows",
+      "summary": "Exploring practical AI patterns where data access, APIs and evidence matter.",
+      "items": [
+        "RAG",
+        "MCP",
+        "FastAPI",
+        "MongoDB Atlas",
+        "Databricks AI",
+        "Agentic data quality"
       ]
     }
   ],

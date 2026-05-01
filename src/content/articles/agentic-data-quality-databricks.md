@@ -9,4 +9,7 @@ tags:
   - Databricks
   - Data quality
   - Metadata
+  - AI
+  - Agents
+  - Spark
 ---

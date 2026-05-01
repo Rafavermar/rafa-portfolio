@@ -2,12 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentCard from "../components/ContentCard.astro";
 import SectionHeading from "../components/SectionHeading.astro";
+import TagFilter from "../components/TagFilter.astro";
 import profile from "../data/profile.json";
 import { getCollection } from "astro:content";
 
 const articles = (await getCollection("articles"))
   .filter((article) => !article.data.draft)
   .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+const tags = articles.flatMap((article) => article.data.tags);
 ---
 
 <BaseLayout title={`Writing - ${profile.name}`} description="Articles, notes, and external writing links.">
@@ -15,9 +17,9 @@ const articles = (await getCollection("articles"))
     <div class="container-page">
       <SectionHeading
         eyebrow="Writing"
-        title="Articles and public notes."
-        description="Technical notes and project write-ups published externally."
+        title="Writing"
       />
+      <TagFilter tags={tags} label="Filter writing by tag" />
       <div class="mt-10 grid gap-5 md:grid-cols-2">
         {
           articles.map((article) => (
@@ -29,6 +31,7 @@ const articles = (await getCollection("articles"))
               tags={article.data.tags}
               image={article.data.image}
               imageAlt={article.data.title}
+              filterable
             />
           ))
         }

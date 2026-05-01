@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeading from "../components/SectionHeading.astro";
 import profile from "../data/profile.json";
 import socialLinks from "../data/social-links.json";
+import { withBase } from "../lib/paths";
 
-const links = socialLinks.filter((link) => !link.url.startsWith("TODO"));
+const links = socialLinks;
 ---
 
 <BaseLayout title={`Contact - ${profile.name}`} description="Contact links for Rafael Vera.">
@@ -13,7 +14,7 @@ const links = socialLinks.filter((link) => !link.url.startsWith("TODO"));
       <SectionHeading
         eyebrow="Contact"
         title="Useful links and contact details."
-        description="The current CV file is not published here. A download link can be added later with a public-safe version."
+        description="Direct links to contact, public profiles and the current CV."
       />
       <div class="mt-10 grid gap-5 md:grid-cols-2">
         <section class="quiet-card p-6">
@@ -27,7 +28,11 @@ const links = socialLinks.filter((link) => !link.url.startsWith("TODO"));
           <ul class="mt-5 space-y-3 text-ink-650">
             <li>{profile.email}</li>
             <li>{profile.availability}</li>
-            <li>{profile.cvUrl || "Public-safe CV download pending."}</li>
+            <li>
+              <a class="font-semibold text-ink-950 hover:text-steel" href={withBase(profile.cvUrl)}>
+                Open CV
+              </a>
+            </li>
           </ul>
         </section>
       </div>

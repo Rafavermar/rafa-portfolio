@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContentCard from "../../components/ContentCard.astro";
 import SectionHeading from "../../components/SectionHeading.astro";
+import TagFilter from "../../components/TagFilter.astro";
 import profile from "../../data/profile.json";
 import { withBase } from "../../lib/paths";
 import { getCollection } from "astro:content";
@@ -9,6 +10,7 @@ import { getCollection } from "astro:content";
 const projects = (await getCollection("projects"))
   .filter((project) => !project.data.draft)
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || a.data.title.localeCompare(b.data.title));
+const tags = projects.flatMap((project) => project.data.tags);
 ---
 
 <BaseLayout title={`Projects - ${profile.name}`} description="Selected data engineering and architecture projects.">
@@ -16,9 +18,10 @@ const projects = (await getCollection("projects"))
     <div class="container-page">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected work and project notes."
-        description="Selected public work, mostly based on documented projects and articles. Private client details are intentionally kept out."
+        title="Projects"
+        description="Hands-on builds, PoCs, pipelines and deployments."
       />
+      <TagFilter tags={tags} label="Filter projects by tag" />
       <div class="mt-10 grid gap-5 md:grid-cols-2">
         {
           projects.map((project) => (
@@ -30,6 +33,7 @@ const projects = (await getCollection("projects"))
               tags={project.data.tags}
               image={project.data.image}
               imageAlt={project.data.title}
+              filterable
             />
           ))
         }

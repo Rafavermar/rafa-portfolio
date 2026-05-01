@@ -15,10 +15,7 @@
 
   body {
     @apply bg-paper-50 font-sans text-ink-800 antialiased;
-    background-image:
-      linear-gradient(115deg, rgba(49, 95, 134, 0.08), transparent 34%),
-      linear-gradient(245deg, rgba(173, 109, 59, 0.08), transparent 36%),
-      linear-gradient(180deg, #fbfaf7 0%, #f8f4ee 52%, #fbfaf7 100%);
+    background: linear-gradient(180deg, #fbfaf7 0%, #f8f7f3 42%, #f2f0ea 100%);
   }
 
   ::selection {
@@ -40,7 +37,7 @@
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.18em] text-steel;
+    @apply text-xs font-semibold uppercase tracking-[0.16em] text-steel;
   }
 
   .section-gap {
@@ -48,31 +45,45 @@
   }
 
   .quiet-card {
-    @apply relative overflow-hidden rounded-md border border-line bg-white/80 shadow-soft backdrop-blur;
+    @apply relative overflow-hidden rounded-md border border-line bg-cloud shadow-soft;
   }
 
   .quiet-card::before {
     content: "";
-    @apply absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-steel via-teal to-copper;
+    @apply absolute inset-x-0 top-0 h-[3px] bg-steel;
   }
 
   .tag {
-    @apply inline-flex rounded-sm border border-line bg-white/75 px-2.5 py-1 text-xs font-medium text-ink-650;
+    @apply inline-flex rounded-sm border border-line bg-paper-50 px-2.5 py-1 text-xs font-medium text-ink-650;
+  }
+
+  .filter-chip {
+    @apply rounded-sm border border-line bg-cloud px-3 py-2 text-sm font-semibold text-ink-650 transition hover:border-steel hover:text-ink-950;
+  }
+
+  .filter-chip.is-active {
+    @apply border-steel bg-ink-950 text-white;
   }
 
   .soft-band {
     @apply border-y border-line;
-    background:
-      linear-gradient(90deg, rgba(49, 95, 134, 0.08), transparent 32%),
-      linear-gradient(270deg, rgba(173, 109, 59, 0.09), transparent 36%),
-      #f4efe7;
+    background: #efede7;
   }
 
-  .minimal-grid {
-    background-image:
-      linear-gradient(rgba(17, 24, 39, 0.045) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(17, 24, 39, 0.045) 1px, transparent 1px);
-    background-size: 64px 64px;
+  .hero-panel {
+    background: linear-gradient(180deg, #fbfaf7 0%, #f3f1eb 100%);
+  }
+
+  .hero-rule {
+    @apply h-1 w-20 bg-steel;
+  }
+
+  .primary-link {
+    @apply rounded-sm bg-ink-950 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-steel;
+  }
+
+  .secondary-link {
+    @apply rounded-sm border border-line bg-cloud px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel hover:text-steel;
   }
 
   .line-clamp-3 {

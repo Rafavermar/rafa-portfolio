@@ -5,22 +5,21 @@ export default {
     extend: {
       colors: {
         ink: {
-          950: "#111827",
-          800: "#263241",
-          650: "#526273",
-          500: "#718096",
+          950: "#14213d",
+          800: "#243246",
+          650: "#516073",
+          500: "#758195",
         },
         paper: {
-          50: "#fbfaf7",
-          100: "#f4efe7",
-          200: "#e8dece",
+          50: "#f8f7f3",
+          100: "#efede7",
+          200: "#e3ded4",
         },
-        line: "#d7d3cb",
-        moss: "#50715f",
-        steel: "#315f86",
-        copper: "#ad6d3b",
-        plum: "#6f5b7f",
-        teal: "#32706f",
+        line: "#d9d5cc",
+        steel: "#25607a",
+        sage: "#5f7667",
+        sand: "#b7905c",
+        cloud: "#fffdf8",
       },
       fontFamily: {
         sans: [
@@ -35,7 +34,8 @@ export default {
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
       },
       boxShadow: {
-        soft: "0 18px 50px rgba(23, 32, 28, 0.08)",
+        soft: "0 16px 42px rgba(20, 33, 61, 0.08)",
+        lift: "0 24px 60px rgba(20, 33, 61, 0.12)",
       },
     },
   },

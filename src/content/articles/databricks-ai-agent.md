@@ -8,5 +8,6 @@ externalUrl: "https://medium.com/@jr.vera.ma/first-databricks-ai-agent-a-tiny-an
 tags:
   - Databricks
   - Agents
+  - AI
   - Analytics
 ---

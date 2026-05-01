@@ -9,19 +9,19 @@ import profile from "../data/profile.json";
     <div class="container-page">
       <SectionHeading
         eyebrow="Expertise"
-        title="Focused areas across cloud data platforms, architecture, and analytics delivery."
-        description="The initial list is based on your requested areas. It can be refined with proof points, examples, and priority ordering."
+        title="Where I can help"
       />
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
         {
           profile.expertise.map((group) => (
             <section class="quiet-card p-6">
               <h2 class="text-xl font-semibold text-ink-950">{group.title}</h2>
-              <ul class="mt-5 space-y-3 text-ink-650">
+              <p class="mt-3 leading-7 text-ink-650">{group.summary}</p>
+              <div class="mt-5 flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <li>{item}</li>
+                  <span class="tag">{item}</span>
                 ))}
-              </ul>
+              </div>
             </section>
           ))
         }

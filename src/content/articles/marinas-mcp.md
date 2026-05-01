@@ -9,4 +9,6 @@ tags:
   - MCP
   - Azure
   - MongoDB
+  - AI
+  - Agents
 ---

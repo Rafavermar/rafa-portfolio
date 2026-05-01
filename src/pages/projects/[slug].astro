@@ -30,7 +30,7 @@ const imageSrc = project.data.image?.startsWith("http")
       {
         imageSrc && (
           <img
-            class="mt-10 aspect-[16/7] w-full rounded-md border border-line object-cover shadow-soft"
+            class="mt-10 aspect-[16/7] w-full rounded-md border border-line bg-paper-100 object-contain p-3 shadow-soft"
             src={imageSrc}
             alt={project.data.title}
             loading="eager"

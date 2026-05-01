@@ -1,7 +1,8 @@
 ---
 name: "Databricks Data Engineer Professional"
 issuer: "Databricks"
-status: "Listed in CV. Credential URL pending"
+image: "/images/certifications/databricks-data-engineer-professional.png"
+credentialUrl: "https://credentials.databricks.com/profile/rafaelveramaran814046/wallet"
 tags:
   - Databricks
   - Data engineering
