@@ -15,6 +15,8 @@ impact: "Demonstrates infrastructure as code and container deployment experience
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/deploying-fastapi-microservices-on-azure-kubernetes-service-aks-using-terraform-22f2f1fccfb0"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/Terraform_AKS_FastAPI_Microservices"
 tags:
   - Azure
   - Terraform

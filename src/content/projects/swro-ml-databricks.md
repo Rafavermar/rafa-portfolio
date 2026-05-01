@@ -14,6 +14,8 @@ impact: "Connects data engineering foundations with applied ML on a lakehouse pl
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/applying-machine-learning-to-swro-desalination-data-with-apache-spark-on-databricks-6a6285438326"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/SparkML-Benchmark-Databricks-Desalination"
 tags:
   - Databricks
   - Spark

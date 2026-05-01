@@ -14,6 +14,8 @@ impact: "Shows experience with ingestion and replication patterns beyond batch s
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/optimizaci%C3%B3n-de-la-replicaci%C3%B3n-de-datos-en-tiempo-real-con-airbyte-y-postgresql-a2e4246a2eb0"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/airbyte-cdc-etl"
 tags:
   - ETL
   - PostgreSQL

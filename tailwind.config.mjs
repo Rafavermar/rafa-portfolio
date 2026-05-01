@@ -5,21 +5,21 @@ export default {
     extend: {
       colors: {
         ink: {
-          950: "#14213d",
-          800: "#243246",
-          650: "#516073",
-          500: "#758195",
+          950: "rgb(var(--color-ink-950) / <alpha-value>)",
+          800: "rgb(var(--color-ink-800) / <alpha-value>)",
+          650: "rgb(var(--color-ink-650) / <alpha-value>)",
+          500: "rgb(var(--color-ink-500) / <alpha-value>)",
         },
         paper: {
-          50: "#f8f7f3",
-          100: "#efede7",
-          200: "#e3ded4",
+          50: "rgb(var(--color-paper-50) / <alpha-value>)",
+          100: "rgb(var(--color-paper-100) / <alpha-value>)",
+          200: "rgb(var(--color-paper-200) / <alpha-value>)",
         },
-        line: "#d9d5cc",
-        steel: "#25607a",
-        sage: "#5f7667",
-        sand: "#b7905c",
-        cloud: "#fffdf8",
+        line: "rgb(var(--color-line) / <alpha-value>)",
+        steel: "rgb(var(--color-steel) / <alpha-value>)",
+        sage: "rgb(var(--color-sage) / <alpha-value>)",
+        sand: "rgb(var(--color-sand) / <alpha-value>)",
+        cloud: "rgb(var(--color-cloud) / <alpha-value>)",
       },
       fontFamily: {
         sans: [

@@ -15,6 +15,8 @@ impact: "Demonstrates pragmatic ELT and analytical modeling with a compact stack
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/proyecto-etl-de-comercio-exterior-con-dlt-dbt-duckdb-y-aws-10e5a5caf682"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/ETL-dbt-dlt-aws"
 tags:
   - ETL
   - AWS

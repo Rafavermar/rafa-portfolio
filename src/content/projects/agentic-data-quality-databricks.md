@@ -15,6 +15,8 @@ impact: "Shows the direction of a reusable data quality framework rather than a 
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/building-an-agentic-data-quality-within-metadata-driven-framework-on-databricks-free-edition-ebb68ea851f4"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/Databricks-MetadataDriven-SCDT2-AgenticDataQApp"
 tags:
   - Databricks
   - Data quality

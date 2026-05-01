@@ -15,28 +15,62 @@ const navItems = [
 
 <header class="border-b border-line bg-paper-50/88 backdrop-blur">
   <a
-    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-cloud focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
     href="#content"
   >
     Skip to content
   </a>
   <div class="container-page flex min-h-20 flex-col justify-center gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
     <a class="group w-fit text-sm font-semibold text-ink-950 no-underline" href={withBase("/")}>
-      <span class="block text-base">{profile.shortName}</span>
+      <span class="block text-lg font-bold tracking-normal">{profile.shortName}</span>
       <span class="block font-normal text-ink-650">{profile.role}</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-650">
-        {
-          navItems.map((item) => (
-            <li>
-              <a class="transition hover:text-ink-950" href={withBase(item.href)}>
-                {item.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
+    <div class="flex flex-wrap items-center gap-4">
+      <nav aria-label="Primary navigation">
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-ink-650">
+          {
+            navItems.map((item) => (
+              <li>
+                <a class="transition hover:text-ink-950" href={withBase(item.href)}>
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+      <button
+        class="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-line bg-cloud text-ink-650 transition hover:border-steel hover:text-ink-950"
+        type="button"
+        data-theme-toggle
+        aria-label="Toggle color theme"
+      >
+        <svg class="dark-icon hidden h-4 w-4" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path d="M21 13.4A8.5 8.5 0 0 1 10.6 3a7 7 0 1 0 10.4 10.4Z" />
+        </svg>
+        <svg class="light-icon h-4 w-4" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path d="M12 4.75a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H13a1 1 0 0 1-1-1Zm0 14.5a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H13a1 1 0 0 1-1-1ZM4.75 12a1 1 0 0 1-1-1v-.01a1 1 0 1 1 2 0V11a1 1 0 0 1-1 1Zm14.5 0a1 1 0 0 1-1-1v-.01a1 1 0 1 1 2 0V11a1 1 0 0 1-1 1ZM6.87 6.87a1 1 0 0 1-1.42 0l-.01-.01a1 1 0 0 1 1.42-1.42l.01.01a1 1 0 0 1 0 1.42Zm10.25 10.25a1 1 0 0 1-1.42 0l-.01-.01a1 1 0 0 1 1.42-1.42l.01.01a1 1 0 0 1 0 1.42Zm0-10.25a1 1 0 0 1 0-1.42l.01-.01a1 1 0 0 1 1.42 1.42l-.01.01a1 1 0 0 1-1.42 0ZM6.87 17.12a1 1 0 0 1-1.42 0l-.01-.01a1 1 0 0 1 1.42-1.42l.01.01a1 1 0 0 1 0 1.42ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" />
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
+
+<script>
+  const root = document.documentElement;
+  const toggle = document.querySelector("[data-theme-toggle]");
+  const darkIcon = document.querySelector(".dark-icon");
+  const lightIcon = document.querySelector(".light-icon");
+  const applyTheme = (theme: "light" | "dark") => {
+    root.dataset.theme = theme;
+    localStorage.setItem("theme", theme);
+    darkIcon?.classList.toggle("hidden", theme !== "light");
+    lightIcon?.classList.toggle("hidden", theme !== "dark");
+  };
+  const savedTheme = localStorage.getItem("theme");
+  const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  applyTheme(savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme);
+  toggle?.addEventListener("click", () => {
+    applyTheme(root.dataset.theme === "dark" ? "light" : "dark");
+  });
+</script>

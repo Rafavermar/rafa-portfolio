@@ -14,6 +14,8 @@ impact: "Shows orchestration experience around distributed jobs and mixed-langua
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/exploring-spark-and-airflow-integration-for-submitting-python-and-scala-jobs-f9b22e9b18e7"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/SparkAirflow-PythonScala"
 tags:
   - Spark
   - Airflow
