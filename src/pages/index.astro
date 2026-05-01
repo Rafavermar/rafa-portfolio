@@ -11,7 +11,7 @@ const projects = (await getCollection("projects"))
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured))
   .slice(0, 4);
 
-const visibleLinks = socialLinks.filter((link) => !link.url.startsWith("TODO"));
+const visibleLinks = socialLinks;
 ---
 
 <BaseLayout>
@@ -31,6 +31,9 @@ const visibleLinks = socialLinks.filter((link) => !link.url.startsWith("TODO"));
           </a>
           <a class="rounded-sm border border-line bg-white/70 px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel" href={withBase("/contact/")}>
             Contact
+          </a>
+          <a class="rounded-sm border border-line bg-white/70 px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel" href={withBase(profile.cvUrl)}>
+            CV
           </a>
         </div>
       </div>

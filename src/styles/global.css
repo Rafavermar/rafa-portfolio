@@ -60,6 +60,14 @@
     @apply inline-flex rounded-sm border border-line bg-white/75 px-2.5 py-1 text-xs font-medium text-ink-650;
   }
 
+  .filter-chip {
+    @apply rounded-sm border border-line bg-white/70 px-3 py-2 text-sm font-semibold text-ink-650 transition hover:border-steel hover:text-ink-950;
+  }
+
+  .filter-chip.is-active {
+    @apply border-steel bg-ink-950 text-white;
+  }
+
   .soft-band {
     @apply border-y border-line;
     background:

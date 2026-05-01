@@ -9,15 +9,18 @@ interface Props {
   tags?: string[];
   image?: string;
   imageAlt?: string;
+  filterable?: boolean;
 }
 
-const { title, description, href, meta, tags = [], image, imageAlt } = Astro.props;
+const { title, description, href, meta, tags = [], image, imageAlt, filterable = false } = Astro.props;
 const Wrapper = href ? "a" : "article";
 const imageSrc = image?.startsWith("http") ? image : image ? withBase(image) : undefined;
 ---
 
 <Wrapper
   href={href}
+  data-filter-card={filterable ? "true" : undefined}
+  data-tags={filterable ? tags.join("|") : undefined}
   class:list={[
     "quiet-card block p-6 no-underline transition",
     href && "hover:-translate-y-0.5 hover:border-steel hover:shadow-soft",
@@ -26,7 +29,7 @@ const imageSrc = image?.startsWith("http") ? image : image ? withBase(image) : u
   {
     imageSrc && (
       <img
-        class="-mx-6 -mt-6 mb-5 h-44 w-[calc(100%+3rem)] border-b border-line object-cover"
+        class="-mx-6 -mt-6 mb-5 h-44 w-[calc(100%+3rem)] border-b border-line bg-paper-100 object-contain p-2"
         src={imageSrc}
         alt={imageAlt ?? ""}
         loading="lazy"

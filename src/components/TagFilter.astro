@@ -1,0 +1,51 @@
+---
+interface Props {
+  tags: string[];
+  label?: string;
+}
+
+const { tags, label = "Filter by tag" } = Astro.props;
+const uniqueTags = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
+---
+
+{
+  uniqueTags.length > 0 && (
+    <div class="mt-10" data-filter-root>
+      <p class="text-sm font-semibold text-ink-950">{label}</p>
+      <div class="mt-4 flex flex-wrap gap-2" role="list" aria-label={label}>
+        <button class="filter-chip is-active" type="button" data-filter-tag="all">
+          All
+        </button>
+        {uniqueTags.map((tag) => (
+          <button class="filter-chip" type="button" data-filter-tag={tag}>
+            {tag}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+<script>
+  const roots = document.querySelectorAll("[data-filter-root]");
+
+  roots.forEach((root) => {
+    const section = root.closest("section");
+    const cards = section ? [...section.querySelectorAll("[data-filter-card]")] : [];
+    const buttons = [...root.querySelectorAll("[data-filter-tag]")];
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const activeTag = button.getAttribute("data-filter-tag");
+
+        buttons.forEach((item) => item.classList.toggle("is-active", item === button));
+
+        cards.forEach((card) => {
+          const tags = card.getAttribute("data-tags")?.split("|") ?? [];
+          const isVisible = activeTag === "all" || tags.includes(activeTag ?? "");
+          card.classList.toggle("hidden", !isVisible);
+        });
+      });
+    });
+  });
+</script>
