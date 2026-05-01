@@ -1,0 +1,86 @@
+[
+  {
+    "company": "Capgemini",
+    "role": "Data Engineer & Architect",
+    "period": "2026/01 - Present",
+    "location": "Málaga, Spain · Remote",
+    "summary": "PySpark, Synapse, Microsoft Fabric and migration work. Data platform engineering, metadata-driven system evolution, Databricks platform solutions and MongoDB.",
+    "stack": [
+      "Spark",
+      "Python",
+      "Azure",
+      "Databricks",
+      "Microsoft Fabric",
+      "MongoDB",
+      "Airflow",
+      "Azure DevOps"
+    ]
+  },
+  {
+    "company": "Aszendit Tech / SARIA Group",
+    "role": "Data Engineer & Architect",
+    "period": "2025/09 - 2026/01",
+    "location": "Germany · Remote",
+    "summary": "Databricks ETL on Delta Lake, Unity Catalog and ADLS Gen2, using Synapse Link, Autoloader, Azure DevOps CI/CD, DataM8/Jinja, Power BI semantic models and ADF orchestration.",
+    "stack": [
+      "PySpark",
+      "SQL",
+      "Databricks",
+      "Delta Lake",
+      "Unity Catalog",
+      "ADF",
+      "Power BI",
+      "Azure DevOps"
+    ]
+  },
+  {
+    "company": "Minsait / Indra",
+    "role": "Data Engineer & Architect",
+    "period": "2024/08 - 2025/09",
+    "location": "Málaga, Spain · Remote",
+    "summary": "Concurrent PySpark and Scala projects around Synapse migration, audit data, environmental integration and enterprise data virtualization.",
+    "stack": [
+      "Spark",
+      "Python",
+      "Scala",
+      "Azure Data Lake",
+      "Databricks",
+      "Data Factory",
+      "Synapse",
+      "Denodo"
+    ]
+  },
+  {
+    "company": "Hiberus",
+    "role": "Data Engineer",
+    "period": "2024/05 - 2024/08",
+    "location": "Málaga, Spain · Remote",
+    "summary": "ETL pipeline development with PySpark and cloud data services across Azure and AWS.",
+    "stack": [
+      "PySpark",
+      "Azure Data Lake Gen2",
+      "Databricks",
+      "Data Factory",
+      "Synapse",
+      "AWS S3",
+      "Glue",
+      "Athena"
+    ]
+  },
+  {
+    "company": "Santander Digital Services",
+    "role": "Software Security Development Analyst",
+    "period": "2023/09 - 2024/03",
+    "location": "Málaga, Spain",
+    "summary": "Software and security work around APIs, OAuth 2.0, identity and access management, with support for data engineering patterns including Kafka, Spark, Airflow and pipelines.",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "OAuth 2.0",
+      "IAM",
+      "Airflow",
+      "Spark"
+    ]
+  }
+]

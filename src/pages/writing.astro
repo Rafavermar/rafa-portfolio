@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentCard from "../components/ContentCard.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import profile from "../data/profile.json";
+import { getCollection } from "astro:content";
+
+const articles = (await getCollection("articles"))
+  .filter((article) => !article.data.draft)
+  .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+---
+
+<BaseLayout title={`Writing - ${profile.name}`} description="Articles, notes, and external writing links.">
+  <section class="section-gap">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Writing"
+        title="Articles and public notes."
+        description="Technical notes and project write-ups published externally."
+      />
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {
+          articles.map((article) => (
+            <ContentCard
+              title={article.data.title}
+              description={article.data.summary}
+              href={article.data.externalUrl}
+              meta={[article.data.source, article.data.date].filter(Boolean).join(" - ")}
+              tags={article.data.tags}
+              image={article.data.image}
+              imageAlt={article.data.title}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContentCard from "../../components/ContentCard.astro";
+import SectionHeading from "../../components/SectionHeading.astro";
+import profile from "../../data/profile.json";
+import { withBase } from "../../lib/paths";
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects"))
+  .filter((project) => !project.data.draft)
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title={`Projects - ${profile.name}`} description="Selected data engineering and architecture projects.">
+  <section class="section-gap">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Projects"
+        title="Selected work and project notes."
+        description="Selected public work, mostly based on documented projects and articles. Private client details are intentionally kept out."
+      />
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {
+          projects.map((project) => (
+            <ContentCard
+              title={project.data.title}
+              description={project.data.description}
+              href={withBase(`/projects/${project.id}/`)}
+              meta={project.data.featured ? "Featured" : undefined}
+              tags={project.data.tags}
+              image={project.data.image}
+              imageAlt={project.data.title}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

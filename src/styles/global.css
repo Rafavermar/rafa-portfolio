@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper-50 font-sans text-ink-800 antialiased;
+    background-image:
+      linear-gradient(115deg, rgba(49, 95, 134, 0.08), transparent 34%),
+      linear-gradient(245deg, rgba(173, 109, 59, 0.08), transparent 36%),
+      linear-gradient(180deg, #fbfaf7 0%, #f8f4ee 52%, #fbfaf7 100%);
+  }
+
+  ::selection {
+    @apply bg-paper-200 text-ink-950;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-steel;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-steel;
+  }
+
+  .section-gap {
+    @apply py-16 sm:py-20;
+  }
+
+  .quiet-card {
+    @apply relative overflow-hidden rounded-md border border-line bg-white/80 shadow-soft backdrop-blur;
+  }
+
+  .quiet-card::before {
+    content: "";
+    @apply absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-steel via-teal to-copper;
+  }
+
+  .tag {
+    @apply inline-flex rounded-sm border border-line bg-white/75 px-2.5 py-1 text-xs font-medium text-ink-650;
+  }
+
+  .soft-band {
+    @apply border-y border-line;
+    background:
+      linear-gradient(90deg, rgba(49, 95, 134, 0.08), transparent 32%),
+      linear-gradient(270deg, rgba(173, 109, 59, 0.09), transparent 36%),
+      #f4efe7;
+  }
+
+  .minimal-grid {
+    background-image:
+      linear-gradient(rgba(17, 24, 39, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17, 24, 39, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .content-body {
+    @apply text-ink-650;
+  }
+
+  .content-body p {
+    @apply my-5 leading-8;
+  }
+
+  .content-body a {
+    @apply font-semibold text-ink-950 hover:text-steel;
+  }
+
+  .content-body ul {
+    @apply my-5 list-disc space-y-2 pl-6;
+  }
+}

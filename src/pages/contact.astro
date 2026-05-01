@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import profile from "../data/profile.json";
+import socialLinks from "../data/social-links.json";
+
+const links = socialLinks.filter((link) => !link.url.startsWith("TODO"));
+---
+
+<BaseLayout title={`Contact - ${profile.name}`} description="Contact links for Rafael Vera.">
+  <section class="section-gap">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Contact"
+        title="Useful links and contact details."
+        description="The current CV file is not published here. A download link can be added later with a public-safe version."
+      />
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        <section class="quiet-card p-6">
+          <h2 class="text-xl font-semibold text-ink-950">Profiles</h2>
+          <div class="mt-5 flex flex-col gap-3">
+            {links.map((link) => <a class="font-semibold text-ink-950 hover:text-steel" href={link.url}>{link.label}</a>)}
+          </div>
+        </section>
+        <section class="quiet-card p-6">
+          <h2 class="text-xl font-semibold text-ink-950">CV</h2>
+          <ul class="mt-5 space-y-3 text-ink-650">
+            <li>{profile.email}</li>
+            <li>{profile.availability}</li>
+            <li>{profile.cvUrl || "Public-safe CV download pending."}</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

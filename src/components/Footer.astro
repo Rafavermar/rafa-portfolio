@@ -1,0 +1,22 @@
+---
+import { withBase } from "../lib/paths";
+import profile from "../data/profile.json";
+import socialLinks from "../data/social-links.json";
+
+const year = new Date().getFullYear();
+const visibleLinks = socialLinks.filter((link) => !link.url.startsWith("TODO"));
+---
+
+<footer class="border-t border-line bg-paper-100">
+  <div class="container-page flex flex-col gap-6 py-10 text-sm text-ink-650 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="font-semibold text-ink-950">{profile.name}</p>
+      <p>Senior data engineering and architecture.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      {visibleLinks.map((link) => <a class="hover:text-ink-950" href={link.url}>{link.label}</a>)}
+      <a class="hover:text-ink-950" href={withBase("/contact/")}>Contact</a>
+    </div>
+    <p>© {year}</p>
+  </div>
+</footer>

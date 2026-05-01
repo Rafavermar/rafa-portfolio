@@ -1,0 +1,43 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Data platform architecture map</title>
+  <desc id="desc">A restrained abstract map of data sources, processing layers, governance, and analytics outputs.</desc>
+  <rect width="1280" height="720" fill="#fbfaf7"/>
+  <path d="M0 96H1280M0 192H1280M0 288H1280M0 384H1280M0 480H1280M0 576H1280M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720" stroke="#e8e1d4" stroke-width="1"/>
+  <g stroke="#536f86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M145 198H310C338 198 352 226 374 240L483 310C507 325 529 326 556 314L690 254C713 244 739 247 758 262L878 356C899 373 925 379 951 372L1112 329"/>
+    <path d="M170 482H342C368 482 392 468 405 445L455 359C471 332 501 318 532 323L686 348C710 352 735 345 754 330L836 266C858 249 887 244 914 253L1098 315"/>
+    <path d="M210 286H363C392 286 414 299 431 322L516 436C533 459 559 472 588 472H748C774 472 797 461 813 442L915 318C934 296 961 284 990 286H1134"/>
+  </g>
+  <g>
+    <rect x="104" y="156" width="138" height="84" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="286" y="151" width="154" height="94" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="494" y="279" width="152" height="92" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="710" y="221" width="174" height="94" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="929" y="286" width="166" height="92" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="355" y="438" width="154" height="88" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <rect x="650" y="430" width="168" height="88" rx="7" fill="#ffffff" stroke="#d8d2c7"/>
+    <circle cx="173" cy="198" r="14" fill="#5d766a"/>
+    <circle cx="363" cy="198" r="14" fill="#536f86"/>
+    <circle cx="570" cy="325" r="14" fill="#9a6d4b"/>
+    <circle cx="797" cy="268" r="14" fill="#5d766a"/>
+    <circle cx="1012" cy="332" r="14" fill="#536f86"/>
+    <circle cx="432" cy="482" r="14" fill="#9a6d4b"/>
+    <circle cx="734" cy="474" r="14" fill="#536f86"/>
+  </g>
+  <g fill="#17201c" font-family="Inter, Arial, sans-serif">
+    <text x="132" y="188" font-size="16" font-weight="700">Sources</text>
+    <text x="132" y="216" font-size="13" fill="#51615a">Systems and events</text>
+    <text x="318" y="186" font-size="16" font-weight="700">Ingestion</text>
+    <text x="318" y="214" font-size="13" fill="#51615a">Pipelines and IaC</text>
+    <text x="526" y="314" font-size="16" font-weight="700">Lakehouse</text>
+    <text x="526" y="342" font-size="13" fill="#51615a">Reliable data layers</text>
+    <text x="742" y="256" font-size="16" font-weight="700">Governance</text>
+    <text x="742" y="284" font-size="13" fill="#51615a">Security and lineage</text>
+    <text x="962" y="322" font-size="16" font-weight="700">Analytics</text>
+    <text x="962" y="350" font-size="13" fill="#51615a">Models and decisions</text>
+    <text x="386" y="473" font-size="16" font-weight="700">Quality</text>
+    <text x="386" y="501" font-size="13" fill="#51615a">Tests and observability</text>
+    <text x="682" y="465" font-size="16" font-weight="700">Delivery</text>
+    <text x="682" y="493" font-size="13" fill="#51615a">Practical operations</text>
+  </g>
+</svg>

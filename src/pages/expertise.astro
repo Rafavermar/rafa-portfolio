@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import profile from "../data/profile.json";
+---
+
+<BaseLayout title={`Expertise - ${profile.name}`} description="Core areas of data engineering and data architecture expertise.">
+  <section class="section-gap">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Expertise"
+        title="Focused areas across cloud data platforms, architecture, and analytics delivery."
+        description="The initial list is based on your requested areas. It can be refined with proof points, examples, and priority ordering."
+      />
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {
+          profile.expertise.map((group) => (
+            <section class="quiet-card p-6">
+              <h2 class="text-xl font-semibold text-ink-950">{group.title}</h2>
+              <ul class="mt-5 space-y-3 text-ink-650">
+                {group.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
