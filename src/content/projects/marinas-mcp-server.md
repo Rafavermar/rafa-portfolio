@@ -15,6 +15,8 @@ impact: "Shows practical agent integration through explicit server-side tools."
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/marinas-mcp-model-context-protocol-server-mi-primera-poc-con-fastmcp-azure-webapps-y-921d70d8108e"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/marinas-mcp"
 tags:
   - MCP
   - Azure

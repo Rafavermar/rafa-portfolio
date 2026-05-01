@@ -15,6 +15,8 @@ impact: "Shows practical security thinking around sensitive data and lakehouse p
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/column-level-pii-encryption-on-databricks-free-edition-b2bbb70787be"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/Databricks-Secure-PII-Ingestion"
 tags:
   - Security
   - Databricks

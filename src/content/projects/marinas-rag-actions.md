@@ -15,6 +15,8 @@ impact: "Demonstrates a pragmatic bridge between data APIs and agent-facing user
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/marinas-rag-actions-tarifas-de-amarres-basadas-en-evidencias-con-fastapi-mongodb-atlas-cloud-d2d7e1c7ccec"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/marinas-rag-actions"
 tags:
   - RAG
   - FastAPI

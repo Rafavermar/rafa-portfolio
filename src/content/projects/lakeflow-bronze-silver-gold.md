@@ -15,6 +15,8 @@ impact: "Provides a compact, reproducible example of lakehouse layering and pipe
 links:
   - label: "Medium article"
     url: "https://medium.com/@jr.vera.ma/from-zero-to-lakeflow-building-a-bronze-silver-gold-pipeline-on-databricks-free-edition-ffd9def4591b"
+  - label: "GitHub repository"
+    url: "https://github.com/Rafavermar/Databricks-tpch-lakeflow-demo"
 tags:
   - Lakehouse
   - Databricks
