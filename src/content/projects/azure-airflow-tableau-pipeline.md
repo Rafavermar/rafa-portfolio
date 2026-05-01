@@ -1,7 +1,7 @@
----
+﻿---
 title: "Python, Airflow, Azure and Tableau data pipeline"
 description: "End-to-end pipeline using Python extraction, Airflow orchestration, Azure services and Tableau analytics."
-image: "/images/work/azure-airflow-tableau-pipeline.svg"
+image: "/images/work/azure-airflow-tableau-pipeline.jpg"
 context: "Public data engineering project documented on Medium."
 problem: "Raw web data needs extraction, transformation, cloud storage and a consumable analytical layer."
 solution: "Built a Python and Airflow workflow, moved data through Azure components and exposed the result through Tableau."

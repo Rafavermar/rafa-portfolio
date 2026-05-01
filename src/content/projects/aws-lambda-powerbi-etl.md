@@ -1,7 +1,7 @@
----
+﻿---
 title: "AWS Lambda ETL to Power BI API"
 description: "Serverless ETL experiment with Lambda, API Gateway, Docker, FastAPI and Power BI streaming."
-image: "/images/work/aws-lambda-powerbi-etl.svg"
+image: "/images/work/aws-lambda-powerbi-etl.jpg"
 context: "Public serverless data engineering project documented on Medium."
 problem: "Streaming data into Power BI from AWS requires careful API, packaging and runtime handling."
 solution: "Wrapped ETL logic behind FastAPI and AWS Lambda, using API Gateway and serverless deployment patterns."

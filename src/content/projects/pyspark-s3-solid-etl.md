@@ -1,7 +1,7 @@
----
+﻿---
 title: "PySpark ETL with S3 persistence"
 description: "A PySpark ETL project applying SOLID-oriented structure and AWS S3 persistence."
-image: "/images/work/pyspark-s3-solid.jpg"
+image: "/images/work/pyspark-s3-solid-etl.jpg"
 context: "Public PySpark project documented on Medium."
 problem: "ETL examples can become hard to maintain when extraction, transformation and persistence concerns are mixed together."
 solution: "Structured a PySpark ETL pipeline with clearer responsibilities and persistence to S3."

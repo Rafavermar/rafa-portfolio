@@ -1,7 +1,7 @@
----
+﻿---
 title: "Docker CI/CD with Jenkins and SonarQube"
 description: "A CI/CD exercise using Git, Docker, Jenkins and SonarQube around a small Python application."
-image: "/images/work/jenkins-cicd.jpg"
+image: "/images/work/jenkins-docker-cicd.jpg"
 context: "Public CI/CD project documented on Medium."
 problem: "Delivery practices matter for data and API work, but they are often treated separately from engineering examples."
 solution: "Built a small deployment workflow with version control, containers, Jenkins automation and SonarQube checks."

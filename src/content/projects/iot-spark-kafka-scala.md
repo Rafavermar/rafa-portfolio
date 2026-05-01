@@ -1,7 +1,7 @@
----
+﻿---
 title: "IoT monitoring with Spark Structured Streaming"
 description: "A smart-farm monitoring system using Scala, Apache Spark Structured Streaming and Kafka."
-image: "/images/work/iot-spark-kafka.jpg"
+image: "/images/work/iot-spark-kafka-scala.jpg"
 context: "Public streaming project documented on Medium and LinkedIn/GitHub."
 problem: "IoT data needs continuous ingestion, processing and monitoring patterns rather than only batch reporting."
 solution: "Built a streaming pipeline using Kafka and Spark Structured Streaming, with Scala for processing logic."

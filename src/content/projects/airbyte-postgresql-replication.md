@@ -1,7 +1,7 @@
----
+﻿---
 title: "Airbyte and PostgreSQL replication"
 description: "A data replication project focused on moving PostgreSQL data with Airbyte."
-image: "/images/work/airbyte-postgresql.jpg"
+image: "/images/work/airbyte-postgresql-replication.jpg"
 context: "Public replication project documented on Medium."
 problem: "Operational databases often need repeatable movement into analytical or downstream systems."
 solution: "Built and documented a PostgreSQL replication flow using Airbyte."

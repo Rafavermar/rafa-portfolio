@@ -1,4 +1,4 @@
----
+﻿---
 title: "Data format benchmark with Spark"
 description: "A Spark benchmark comparing Parquet, Delta Lake, ORC, Avro and JSON."
 image: "/images/work/file-format-benchmark.jpg"

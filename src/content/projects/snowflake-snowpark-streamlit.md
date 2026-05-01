@@ -1,7 +1,7 @@
----
+﻿---
 title: "Snowflake, Snowpark and Streamlit analytics app"
 description: "Snowflake data application work using Snowpark, Streamlit and basic machine learning."
-image: "/images/work/snowflake-snowpark-streamlit.svg"
+image: "/images/work/snowflake-snowpark-streamlit.jpg"
 context: "Public Snowflake lab and repository documented on Medium."
 problem: "Warehouse data needs interactive exploration and lightweight analytical modeling."
 solution: "Connected to Snowflake from a Python environment, used Snowpark for processing and exposed results through Streamlit."

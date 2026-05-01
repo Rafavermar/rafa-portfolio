@@ -1,7 +1,7 @@
----
+﻿---
 title: "Azure Databricks demographics pipeline with Power BI"
 description: "Medallion-style demographics pipeline on Azure Databricks with Power BI reporting."
-image: "/images/work/azure-databricks-demographics-pipeline.svg"
+image: "/images/work/azure-databricks-demographics-pipeline.jpg"
 context: "Public Azure data platform project documented on Medium."
 problem: "Demographics API data needs ingestion, transformation and reporting with cloud-native services."
 solution: "Built an Azure-based pipeline using Databricks, medallion layers and Power BI reporting."

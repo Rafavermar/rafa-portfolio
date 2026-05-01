@@ -1,7 +1,7 @@
----
+﻿---
 title: "Snowflake, Airflow, dbt and Cosmos data workflow"
 description: "Snowflake pipeline orchestrated with Airflow, dbt, Cosmos and Snowpark."
-image: "/images/work/snowflake-airflow-dbt-cosmos.svg"
+image: "/images/work/snowflake-airflow-dbt-cosmos.jpg"
 context: "Public project around orchestration and transformation in Snowflake."
 problem: "Analytical transformations and Snowpark logic need coordinated execution and clear workflow boundaries."
 solution: "Used Airflow with Cosmos to orchestrate dbt transformations and Snowpark tasks against Snowflake."

@@ -1,7 +1,7 @@
----
+﻿---
 title: "FastAPI on AKS with Terraform"
 description: "Infrastructure and deployment notes for FastAPI microservices on Azure AKS."
-image: "/images/work/aks-terraform.jpg"
+image: "/images/work/fastapi-aks-terraform.jpg"
 context: "Public cloud deployment project documented on Medium."
 problem: "API services need repeatable infrastructure and deployment patterns."
 solution: "Deployed FastAPI microservices on Azure Kubernetes Service using Terraform."

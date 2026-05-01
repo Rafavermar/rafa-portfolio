@@ -1,7 +1,7 @@
----
+﻿---
 title: "Real-time sentiment pipeline with Spark, OpenAI, Kafka and Elasticsearch"
 description: "Streaming sentiment analysis pipeline using Spark, OpenAI, Kafka and Elasticsearch."
-image: "/images/work/realtime-sentiment-analysis.svg"
+image: "/images/work/realtime-sentiment-analysis.jpg"
 context: "Public streaming data engineering project documented on Medium."
 problem: "Customer review streams need enrichment, classification and search-oriented storage."
 solution: "Built a real-time flow from TCP socket ingestion to Spark processing, OpenAI sentiment classification, Kafka messaging and Elasticsearch indexing."

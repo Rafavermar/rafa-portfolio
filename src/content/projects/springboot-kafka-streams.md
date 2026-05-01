@@ -1,7 +1,7 @@
----
+﻿---
 title: "Spring Boot and Kafka Streams data flow"
 description: "Kafka producer, stream processor and consumer built with Spring Boot."
-image: "/images/work/springboot-kafka-streams.svg"
+image: "/images/work/springboot-kafka-streams.jpg"
 context: "Public streaming backend project documented on Medium."
 problem: "Event-driven services need clear producer, stream and consumer boundaries."
 solution: "Built a small Kafka ecosystem with Spring Boot services and Kafka Streams."

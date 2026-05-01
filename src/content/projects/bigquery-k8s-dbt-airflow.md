@@ -1,7 +1,7 @@
----
+﻿---
 title: "BigQuery transformations with dbt, Airflow and Kubernetes"
 description: "Automated BigQuery transformation workflow using dbt, Airflow, Kubernetes and GitHub Actions."
-image: "/images/work/bigquery-k8s-dbt-airflow.svg"
+image: "/images/work/bigquery-k8s-dbt-airflow.jpg"
 context: "Public data engineering project documented on Medium."
 problem: "BigQuery transformations need repeatable orchestration, containerized execution and clear deployment flow."
 solution: "Built a dbt pipeline executed from Airflow on Kubernetes, with Docker packaging and GitHub Actions for image delivery."

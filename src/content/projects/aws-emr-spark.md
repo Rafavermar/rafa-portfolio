@@ -1,7 +1,7 @@
----
+﻿---
 title: "AWS EMR and Apache Spark data engineering project"
 description: "Practical Spark processing setup on Amazon EMR."
-image: "/images/work/aws-emr-spark.svg"
+image: "/images/work/aws-emr-spark.jpg"
 context: "Public AWS and Spark project documented on Medium."
 problem: "Distributed Spark processing needs a configured EMR cluster and a repeatable execution guide."
 solution: "Documented the setup of an Amazon EMR cluster with Spark and supporting deployment steps."

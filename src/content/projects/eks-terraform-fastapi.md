@@ -1,7 +1,7 @@
----
+﻿---
 title: "FastAPI on EKS with Terraform"
 description: "Infrastructure and deployment notes for FastAPI microservices on AWS EKS."
-image: "/images/work/eks-terraform.jpg"
+image: "/images/work/eks-terraform-fastapi.jpg"
 context: "Public AWS deployment project documented on Medium."
 problem: "Containerized APIs need repeatable deployment patterns across cloud providers."
 solution: "Deployed FastAPI microservices on AWS Elastic Kubernetes Service using Terraform and Kubernetes primitives."
