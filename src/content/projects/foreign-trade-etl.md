@@ -1,6 +1,7 @@
 ﻿---
 title: "Foreign trade ETL"
 description: "An ETL project for foreign trade data using dlt, dbt, DuckDB and AWS."
+image: "/images/work/foreign-trade-etl.jpg"
 context: "Public ETL project documented on Medium."
 problem: "Public trade data needs repeatable ingestion, transformation and local analytical storage."
 solution: "Built an ETL flow combining dlt, dbt, DuckDB and AWS-oriented persistence patterns."

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">FastAPI microservices on Kubernetes</title>
+  <desc id="desc">Minimal architecture card showing FastAPI connected to Kubernetes.</desc>
+  <rect width="1280" height="720" fill="#f8f6f0"/>
+  <rect x="74" y="88" width="1132" height="544" rx="34" fill="#ffffff" stroke="#d8d2c4" stroke-width="2"/>
+  <text x="118" y="152" fill="#13213b" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">FastAPI microservices on Kubernetes</text>
+  <line x1="118" y1="184" x2="1162" y2="184" stroke="#d8d2c4" stroke-width="2"/>
+  <g transform="translate(178 262)">
+    <circle cx="98" cy="98" r="74" fill="#009688"/>
+    <path d="M98 42 54 108h36l-18 46 70-78h-40l18-34z" fill="#ffffff"/>
+    <text x="98" y="210" text-anchor="middle" fill="#13213b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">FastAPI</text>
+    <text x="98" y="248" text-anchor="middle" fill="#506178" font-family="Inter, Arial, sans-serif" font-size="22">REST API</text>
+  </g>
+  <g fill="none" stroke="#2b6f8a" stroke-width="4" stroke-linecap="round">
+    <path d="M426 360h140"/>
+    <path d="m544 336 28 24-28 24"/>
+  </g>
+  <g transform="translate(636 244)">
+    <circle cx="132" cy="132" r="98" fill="#326ce5"/>
+    <circle cx="132" cy="132" r="22" fill="#ffffff"/>
+    <g stroke="#ffffff" stroke-width="9" stroke-linecap="round">
+      <path d="M132 46v42"/>
+      <path d="M132 176v42"/>
+      <path d="M46 132h42"/>
+      <path d="M176 132h42"/>
+      <path d="m71 71 30 30"/>
+      <path d="m163 163 30 30"/>
+      <path d="m193 71-30 30"/>
+      <path d="m101 163-30 30"/>
+    </g>
+    <circle cx="132" cy="132" r="72" fill="none" stroke="#ffffff" stroke-width="7"/>
+    <text x="132" y="284" text-anchor="middle" fill="#13213b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Kubernetes</text>
+    <text x="132" y="322" text-anchor="middle" fill="#506178" font-family="Inter, Arial, sans-serif" font-size="22">Deployment + Service</text>
+  </g>
+  <g transform="translate(966 300)">
+    <rect x="0" y="0" width="138" height="78" rx="16" fill="#eef3f4" stroke="#d8d2c4"/>
+    <text x="69" y="48" text-anchor="middle" fill="#13213b" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Client</text>
+  </g>
+  <g fill="none" stroke="#8aa08b" stroke-width="4" stroke-linecap="round">
+    <path d="M900 360h64"/>
+    <path d="m946 336 28 24-28 24"/>
+  </g>
+</svg>
