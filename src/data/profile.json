@@ -3,6 +3,7 @@
   "shortName": "Rafael Vera",
   "role": "Senior Data Engineer & Data Architect",
   "location": "M\u00e1laga, Spain \u00b7 Remote",
+  "photoUrl": "/images/profile/rafael-vera.jpg",
   "intro": "I design and build cloud data platforms across Azure, Databricks, Microsoft Fabric and Apache Spark, with a strong focus on practical architecture, delivery and maintainability.",
   "summary": [
     "Data engineer and architect working on cloud data platforms, metadata-driven systems, secure analytics foundations and semantic layers.",

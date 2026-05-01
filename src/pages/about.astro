@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeading from "../components/SectionHeading.astro";
 import profile from "../data/profile.json";
 import experience from "../data/experience.json";
+import { withBase } from "../lib/paths";
 ---
 
 <BaseLayout title={`About - ${profile.name}`} description="Professional background and working style.">
@@ -12,15 +13,23 @@ import experience from "../data/experience.json";
         eyebrow="About"
         title="Data engineering and architecture with a practical delivery mindset."
       />
-      <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_0.8fr]">
+      <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_340px]">
         <div class="space-y-5 text-lg leading-8 text-ink-650">
           {profile.about.map((paragraph) => <p>{paragraph}</p>)}
         </div>
-        <aside class="quiet-card h-fit p-6">
-          <h2 class="text-lg font-semibold text-ink-950">Working Principles</h2>
-          <ul class="mt-5 space-y-4 text-ink-650">
-            {profile.principles.map((principle) => <li>{principle}</li>)}
-          </ul>
+        <aside class="quiet-card h-fit overflow-hidden">
+          <img
+            class="aspect-square w-full border-b border-line bg-paper-100 object-cover"
+            src={withBase(profile.photoUrl)}
+            alt="Rafael Vera"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="text-lg font-semibold text-ink-950">Working Principles</h2>
+            <ul class="mt-5 space-y-4 text-ink-650">
+              {profile.principles.map((principle) => <li>{principle}</li>)}
+            </ul>
+          </div>
         </aside>
       </div>
     </div>
