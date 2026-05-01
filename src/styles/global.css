@@ -24,6 +24,10 @@
     --surface-gradient-end: #f2f0ea;
     --hero-gradient-start: #fbfaf7;
     --hero-gradient-end: #f3f1eb;
+    --primary-button-bg: #14213d;
+    --primary-button-text: #ffffff;
+    --primary-button-hover-bg: #25607a;
+    --primary-button-hover-text: #ffffff;
   }
 
   html[data-theme="dark"] {
@@ -45,6 +49,10 @@
     --surface-gradient-end: #182231;
     --hero-gradient-start: #101822;
     --hero-gradient-end: #182331;
+    --primary-button-bg: #f5f7fa;
+    --primary-button-text: #101822;
+    --primary-button-hover-bg: #65accc;
+    --primary-button-hover-text: #07111a;
   }
 
   html {
@@ -148,12 +156,14 @@
   }
 
   .primary-link {
-    @apply rounded-sm px-4 py-3 text-sm font-semibold text-white no-underline transition;
-    background-color: rgb(var(--color-ink-950));
+    @apply rounded-sm px-4 py-3 text-sm font-semibold no-underline transition;
+    color: var(--primary-button-text);
+    background-color: var(--primary-button-bg);
   }
 
   .primary-link:hover {
-    background-color: rgb(var(--color-steel));
+    color: var(--primary-button-hover-text);
+    background-color: var(--primary-button-hover-bg);
   }
 
   .secondary-link {
