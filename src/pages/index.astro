@@ -15,32 +15,32 @@ const visibleLinks = socialLinks;
 ---
 
 <BaseLayout>
-  <section class="minimal-grid relative overflow-hidden border-b border-line">
-    <div class="absolute right-0 top-0 h-40 w-40 border-l border-b border-line bg-white/35"></div>
-    <div class="absolute bottom-16 right-16 hidden h-24 w-24 border border-steel/30 bg-paper-50/70 md:block"></div>
+  <section class="hero-slate relative overflow-hidden border-b border-line">
+    <div class="bamboo-panel absolute inset-y-0 right-0 hidden w-[18vw] min-w-48 opacity-90 lg:block"></div>
+    <div class="absolute bottom-12 right-[12vw] hidden h-28 w-28 border border-white/20 bg-white/5 lg:block"></div>
     <div class="container-page relative grid min-h-[min(640px,calc(100vh-5rem))] content-center gap-10 py-20">
       <div class="max-w-4xl">
-        <p class="eyebrow">{profile.role}</p>
-        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl lg:text-6xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-paper-200">{profile.role}</p>
+        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
           Data platforms built to be operated, trusted and evolved.
         </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-ink-650">{profile.intro}</p>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-paper-200">{profile.intro}</p>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a class="rounded-sm bg-ink-950 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-steel" href={withBase("/projects/")}>
+          <a class="rounded-sm bg-white px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:bg-paper-200" href={withBase("/projects/")}>
             View projects
           </a>
-          <a class="rounded-sm border border-line bg-white/70 px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel" href={withBase("/contact/")}>
+          <a class="rounded-sm border border-white/30 bg-white/10 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/15" href={withBase("/contact/")}>
             Contact
           </a>
-          <a class="rounded-sm border border-line bg-white/70 px-4 py-3 text-sm font-semibold text-ink-950 no-underline transition hover:border-steel" href={withBase(profile.cvUrl)}>
+          <a class="rounded-sm border border-white/30 bg-white/10 px-4 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/15" href={withBase(profile.cvUrl)}>
             CV
           </a>
         </div>
       </div>
-      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink-650">
-        <a class="hover:text-ink-950" href={withBase("/writing/")}>Writing</a>
-        <a class="hover:text-ink-950" href={withBase("/certifications/")}>Certifications</a>
-        {visibleLinks.map((link) => <a class="hover:text-ink-950" href={link.url}>{link.label}</a>)}
+      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-paper-200">
+        <a class="hover:text-white" href={withBase("/writing/")}>Writing</a>
+        <a class="hover:text-white" href={withBase("/certifications/")}>Certifications</a>
+        {visibleLinks.map((link) => <a class="hover:text-white" href={link.url}>{link.label}</a>)}
       </div>
     </div>
   </section>

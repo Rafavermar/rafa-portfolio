@@ -18,7 +18,8 @@
   "cvUrl": "/documents/EN_RafaelVera.pdf",
   "expertise": [
     {
-      "title": "Cloud Data Platforms",
+      "title": "Platform architecture",
+      "summary": "Designing data platforms that are clear to operate and evolve.",
       "items": [
         "Azure",
         "Databricks",
@@ -29,7 +30,8 @@
       ]
     },
     {
-      "title": "Engineering Foundations",
+      "title": "Data engineering delivery",
+      "summary": "Building pipelines, lakehouse layers and automation patterns for real workloads.",
       "items": [
         "Apache Spark",
         "PySpark",
@@ -41,7 +43,8 @@
       ]
     },
     {
-      "title": "Analytics And Governance",
+      "title": "Analytics and governance",
+      "summary": "Connecting trusted data foundations with semantic models, security and quality controls.",
       "items": [
         "Semantic models / Power BI",
         "Private networking / secure cloud architecture",
@@ -49,6 +52,18 @@
         "Unity Catalog",
         "Delta Lake",
         "Operational delivery"
+      ]
+    },
+    {
+      "title": "AI and agent workflows",
+      "summary": "Exploring practical AI patterns where data access, APIs and evidence matter.",
+      "items": [
+        "RAG",
+        "MCP",
+        "FastAPI",
+        "MongoDB Atlas",
+        "Databricks AI",
+        "Agentic data quality"
       ]
     }
   ],

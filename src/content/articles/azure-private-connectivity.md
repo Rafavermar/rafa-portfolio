@@ -9,4 +9,5 @@ tags:
   - Azure
   - Private networking
   - Security
+  - Architecture
 ---

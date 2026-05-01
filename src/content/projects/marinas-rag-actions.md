@@ -19,6 +19,8 @@ tags:
   - RAG
   - FastAPI
   - MongoDB
+  - AI
+  - Agents
 featured: false
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: "Databricks Data Engineer Associate"
 issuer: "Databricks"
-status: "Listed in CV. Credential URL pending"
+image: "/images/certifications/databricks.svg"
+credentialUrl: "https://credentials.databricks.com/profile/rafaelveramaran814046/wallet"
 tags:
   - Databricks
   - Data engineering

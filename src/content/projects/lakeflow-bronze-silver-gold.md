@@ -19,6 +19,7 @@ tags:
   - Lakehouse
   - Databricks
   - Pipeline design
+  - Spark
 featured: true
 ---
 

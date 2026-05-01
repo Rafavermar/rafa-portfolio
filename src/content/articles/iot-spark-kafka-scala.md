@@ -9,4 +9,5 @@ tags:
   - Streaming
   - Spark
   - Kafka
+  - Scala
 ---

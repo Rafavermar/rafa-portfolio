@@ -9,4 +9,6 @@ tags:
   - RAG
   - FastAPI
   - MongoDB
+  - AI
+  - Agents
 ---

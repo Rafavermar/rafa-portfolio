@@ -83,6 +83,25 @@
     background-size: 64px 64px;
   }
 
+  .hero-slate {
+    background:
+      radial-gradient(
+        circle at 18% 20%,
+        rgba(255, 255, 255, 0.09),
+        transparent 28%
+      ),
+      linear-gradient(135deg, #3a3d3c 0%, #252a2b 48%, #1f2425 100%);
+  }
+
+  .bamboo-panel {
+    background:
+      linear-gradient(90deg, rgba(71, 48, 22, 0.16) 1px, transparent 1px),
+      linear-gradient(180deg, #e5c884 0%, #caa260 48%, #e2c37b 100%);
+    background-size:
+      22px 100%,
+      auto;
+  }
+
   .line-clamp-3 {
     display: -webkit-box;
     overflow: hidden;
