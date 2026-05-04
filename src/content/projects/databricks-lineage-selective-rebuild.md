@@ -26,5 +26,3 @@ tags:
   - Lakehouse
 featured: true
 ---
-
-This belongs in Projects because the article points to a public repository with implementation, docs and reproducible Databricks assets.
