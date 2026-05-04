@@ -147,6 +147,12 @@ When you are ready to replace the current Carrd site:
 
 Keep the Carrd setup unchanged until the GitHub Pages site is reviewed and ready to become the public site.
 
+## License
+
+The site code is licensed under the MIT License.
+
+Personal content, project descriptions, articles, profile data, CV material, images, documents, and other assets are not covered by the MIT License and remain all rights reserved unless stated otherwise. See `LICENSE` for details.
+
 ## Personal Content Still Needed
 
 The first version now uses the CV and public Medium material where it could be verified. Please provide:
